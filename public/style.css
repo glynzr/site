@@ -1,56 +1,79 @@
-html, body {
-	height: 700px;
-	margin: 0;
-	background-color: #9DA1A2;
+html,
+body {
+    height: 700px;
+    margin: 0;
+    background-color: #9DA1A2;
 }
 
 .nav {
-	background-color: white;
+    background-color: white;
 }
 
 .nav>h3>div {
-	margin-bottom: 10px;
-	margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .smalltext {
-	margin-bottom: 10px;
-	margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .container {
-	display: flex;
-  	flex-direction: row;
-  	flex-wrap: nowrap;
-  	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.container>div {
-	width: 50%;
-	margin: 0;
-  	height: 600px;
+.container>form>div {
+    width: 50%;
+    margin: 0;
+    height: 600px;
 }
 
-.left > img {
-	width: 80%;
-	height: 500px;
-	margin: 50px 50px;
+.left {
+    width: 40%;
+    margin: 10px 10px;
+    height: 500px;
 }
 
-.right > textarea{
-	width: 600px;
+.left>img {
+    width: 80%;
+    height: 500px;
+    margin: 50px 50px;
+}
+
+.right {
+    width: 50%;
+    margin: 0;
+    height: 600px;
+}
+
+.right>textarea {
+    width: 600px;
     height: 400px;
     margin-left: 50px;
     margin-top: 50px;
     font-size: 16px;
 }
 
-.right > p {
-	margin-left: 50px;
-	font-family: Arial, Helvetica, sans-serif;
+.right>p {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+h3,
+div,
+small {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-h3, div, small {
-	font-family: Arial, Helvetica, sans-serif;
+.adminp {
+    margin-left: 50px;
+}
+
+.iamnotaclass {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
