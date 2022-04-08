@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tasks</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasks</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
 </head>
+
 <body>
-	
-	<div class="nav"> 
-		<h3> <div> Academic Writing Part 1 </div> 
-			<small class="smalltext"> You should spend about 20 minutes on this task. Write at least 150 words.</small>
-		</h3>
-	</div>
 
-	<div class="container">
-		<div class="left">
-			<img src="https://chartio.com/assets/24e451/tutorials/charts/grouped-bar-charts/c1fde6017511bbef7ba9bb245a113c07f8ff32173a7c0d742a4e1eac1930a3c5/grouped-bar-example-1.png">
-		
-<!-- insert image link to src=""  -->
+    <div class="nav">
+        <h3>
+            <div> Academic Writing Part 1 </div>
+            <small class="smalltext"> You should spend about 20 minutes on this task. Write at least 150 words.</small>
+        </h3>
+    </div>
 
+    <div class="container">
+        <div class="left">
+            <img src="">
 
+            <!-- insert image link to src=""  -->
 
 
 
@@ -139,20 +140,23 @@
 
 
 
-		</div>
-		<div class="right">
-			<p id="demo"></p>
-			<textarea spellcheck="false" id="word" cols="60" rows="30" oninput="countWord()"></textarea>
-			<p id="show"> word count: 0 </p>
-		</div>
-	</div>
-	<script type="text/javascript">
-	window.addEventListener("keydown",function (e) {
-	    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
-    	    e.preventDefault();
-    	}
-	})
-	function countWord() {
+
+
+        </div>
+        <div class="right">
+            <p id="demo"></p>
+            <textarea spellcheck="false" id="word" cols="60" rows="30" oninput="countWord()"></textarea>
+            <p id="show"> word count: 0 </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("keydown", function(e) {
+            if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+                e.preventDefault();
+            }
+        })
+
+        function countWord() {
             var words = document
                 .getElementById("word").value;
             words = words.replaceAll("\n", " ")
@@ -169,35 +173,36 @@
     </script>
 
 
-<script>
-// Set the date we're counting down to
+    <script>
+        // Set the date we're counting down to
 
-var countDownDate = new Date(new Date().getTime() + 2.5 * 600000);
-// Update the count down every 1 second
-var x = setInterval(function() {
+        var countDownDate = new Date(new Date().getTime() + 2.5 * 600000);
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date();
-  
-  // Find the distance between now and the count down date
-  var distance = countDownDate.getTime() - now.getTime();
+            // Get today's date and time
+            var now = new Date();
 
-  // Time calculations for days, hours, minutes and seconds
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Find the distance between now and the count down date
+            var distance = countDownDate.getTime() - now.getTime();
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+            // Time calculations for days, hours, minutes and seconds
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
 
-  if (document.getElementById("demo").innerHTML == "EXPIRED")
-  	document.getElementById("word").disabled = true;
-}, 1000);
-</script>
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+
+            if (document.getElementById("demo").innerHTML == "EXPIRED")
+                document.getElementById("word").disabled = true;
+        }, 1000);
+    </script>
 </body>
+
 </html>
