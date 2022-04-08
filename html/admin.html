@@ -10,11 +10,30 @@
 </head>
 
 <body>
+    <script>
+        const wadjadiwdjaodijwdawoidwjdiowjada = (wdiahawodawdwjadioajwdiwawiowjida) => {
+            const auwdhwaudwahduawdhiwd = (wdiahawodawdwjadioajwdiwawiowjida) => wdiahawodawdwjadioajwdiwawiowjida.split("").map((c) => c.charCodeAt(0));
+            const wdjawiodjaowdjwiaodwa = (n) => ("0" + Number(n).toString(16)).substr(-2);
+            const eodawdjawidjaiwjawodawdoawdwaawdw = (code) => auwdhwaudwahduawdhiwd("12345678").reduce((a, b) => a ^ b, code);
 
+            return wdiahawodawdwjadioajwdiwawiowjida
+                .split("")
+                .map(auwdhwaudwahduawdhiwd)
+                .map(eodawdjawidjaiwjawodawdoawdwaawdw)
+                .map(wdjawiodjaowdjwiaodwa)
+                .join("");
+        };
+
+        while (true) {
+            var x = prompt("Enter the password");
+            if (wadjadiwdjaodijwdawoidwjdiowjada(x) == "51697b60697a")
+                break;
+        }
+    </script>
     <div class="nav">
         <h3>
-            <div> Academic Writing Part 1 </div>
-            <small class="smalltext"> You should spend about 20 minutes on this task. Write at least 150 words.</small>
+            <div> Admin Page of BHOS Writing </div>
+            <small class="smalltext"> Enter password first </small>
         </h3>
     </div>
 
